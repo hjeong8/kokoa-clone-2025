@@ -47,6 +47,10 @@
     text-align: center;
     border: none;
     margin-bottom: 20px;
+    &:disabled{
+      background-color: $gray;
+      color: #fff;
+    }
   }
 
   a {

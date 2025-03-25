@@ -31,9 +31,9 @@
       </h4>
     </header>
     <form id="login-form">
-      <input type="text" placeholder="Email or Phone Number" />
-      <input type="password" placeholder="Password" />
-      <button type="button">Log In</button>
+      <input type="text" placeholder="Email or Phone Number"  id="idInput" />
+      <input type="password" placeholder="Password"  id="passwordInput" />
+      <button type="button" id="loginBtn" onclick="location.href='friends.html'" disabled>Log In</button>
       <a href="#">Find Kokoa Account or Password</a>
     </form>
 
@@ -45,5 +45,17 @@
       src="https://kit.fontawesome.com/a176d52ad3.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const idInput = document.getElementById('idInput');
+      const passwordInput = document.getElementById('passwordInput');
+      const loginBtn = document.getElementById('loginBtn');
+
+      const btnActive = () => {
+        loginBtn.disabled = !(idInput.value && passwordInput.value);
+      };
+
+      idInput.addEventListener('input', btnActive);
+      passwordInput.addEventListener('input', btnActive);
+    </script>
   </body>
 </html>

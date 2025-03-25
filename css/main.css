@@ -884,6 +884,10 @@ template {
   border: none;
   margin-bottom: 20px;
 }
+#login-form button:disabled {
+  background-color: #bbb;
+  color: #fff;
+}
 #login-form a {
   font-size: 13px;
   color: #252525;
