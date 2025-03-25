@@ -1,0 +1,25 @@
+.icon-row {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 10px;
+
+  &-icons {
+    text-align: center;
+
+    a {
+      @include inline-flexbox;
+      flex-direction: column;
+
+      span {
+        margin-top: 15px;
+      }
+
+      img {
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.settings-list {
+  li {
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    a {
+      @include flexbox(start);
+      font-size: 20px;
+      padding: 20px 0;
+
+      i {
+        margin-right: 20px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+
+  &-column {
+    @include flexbox;
+
+    &:last-child {
+      color: $gray;
+      margin-left: auto;
+    }
+
+    span {
+      padding-left: 15px;
+      text-transform: capitalize;
+    }
+
+    .badge {
+      margin-left: 10px;
+      padding: 0;
+    }
+  }
+}
+.wide-line {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+.settings-main > .main-screen:first-child{
+  padding-bottom: 0;
+}
+.settings-main > .main-screen:not(:first-child) {
+  margin-top: 10px;
+}

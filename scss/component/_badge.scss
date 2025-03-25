@@ -1,0 +1,38 @@
+.badge {
+  width: 25px;
+  height: 25px;
+  @include flexbox;
+  background: $orange;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+.nav-chat-alarm {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  animation: notificationAnimation 2s ease-in-out infinite;
+}
+.new-alarm {
+  width: 5px;
+  height: 5px;
+  background: $orange;
+  border-radius: 50%;
+}
+.nav-dot-alarm {
+  position: absolute;
+  top: -50%;
+  right: -10%;
+}
+@keyframes notificationAnimation{
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}

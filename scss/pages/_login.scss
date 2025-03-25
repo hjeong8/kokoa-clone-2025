@@ -1,0 +1,59 @@
+.welcome-header {
+  margin: 100px 25px;
+  @include column-flexbox;
+
+  &-title {
+    font-size: 23px;
+    letter-spacing: -0.5px;
+    margin-bottom: 25px;
+    color: #141414;
+  }
+
+  &-text {
+    text-align: center;
+    color: #7c7c7c;
+    line-height: 1.2;
+  }
+}
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 25px;
+
+  input {
+    border: 0;
+    padding-bottom: 15px;
+    margin: 0 0 25px 0;
+    font-size: 17px;
+    border-bottom: 1px solid #999;
+    transition: border-color 0.3s ease-in-out;
+
+    &::placeholder {
+      color: #999;
+    }
+
+    &:focus {
+      border-color: $primary;
+    }
+  }
+
+  button {
+    background-color: $primary;
+    color: #222;
+    font-size: 17px;
+    padding: 17px;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  a {
+    font-size: 13px;
+    color: #252525;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+}

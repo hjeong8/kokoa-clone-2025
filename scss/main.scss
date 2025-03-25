@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import 'base/reset';
+@import 'base/normalize';
+@import 'base/globals';
+
+@import 'contents';
+
+@import 'mixins/flexbox';
+
+@import 'component/status-bar';
+@import 'component/header';
+@import 'component/nav';
+@import 'component/sub-title';
+@import 'component/badge';
+@import 'component/user-component';
+@import 'component/icon-row';
+@import 'component/no-mobile';
+
+@import 'pages/login';
+@import 'pages/freinds';
+@import 'pages/chatting';
+@import 'pages/find';
+@import 'pages/more';
+@import 'pages/settings';
+
+.main-screen {
+  margin-top: 100px;
+  padding: 0px $horizontal-space 80px;
+}

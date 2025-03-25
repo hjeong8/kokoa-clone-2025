@@ -1,0 +1,16 @@
+#no-mobile{
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+@media screen and (max-width: $sm-breakpoint) {
+  #no-mobile{display: none;}
+}

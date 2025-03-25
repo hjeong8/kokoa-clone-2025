@@ -1,0 +1,97 @@
+.re-friends-text {
+  @include flexbox;
+
+  p {
+    padding: 60px 0;
+    color: $gray;
+  }
+}
+
+.open-chat-list {
+  li {
+    @include flexbox(between);
+    padding: 10px 0;
+
+    & + li {
+      border-top: 1px solid $gray-line;
+    }
+
+    &:first-child {
+      margin-top: -10px;
+    }
+  }
+
+  &-column {
+    &:first-child {
+      width: calc(100% - 90px);
+      padding-right: 10px;
+    }
+
+    h5 {
+      font-weight: 600;
+      font-size: 17px;
+      padding-bottom: 5px;
+    }
+
+    p {
+      color: $gray;
+      padding-bottom: 7px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    &-text {
+      @include flexbox(start);
+      font-size: 13px;
+
+      img {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+
+      &-members {
+        color: $gray;
+      }
+
+      .divider {
+        width: 1px;
+        height: 15px;
+        background: $gray-line;
+        margin: 0 5px;
+      }
+
+      &-act {
+        color: fuchsia;
+      }
+    }
+
+    &-photo {
+      position: relative;
+
+      img {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+      }
+
+      div {
+        position: absolute;
+        bottom: 10px;
+        right: 5px;
+        @include flexbox;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        padding: 5px 10px;
+        color: #f9f9f9;
+        font-size: 10px;
+
+        i {
+          padding-right: 3px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.user-component,
+.user-component__column {
+  @include flexbox(between);
+}
+
+.user-component {
+  & + & {
+  padding-top: 15px;
+  }
+
+  &-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+    margin-right: 15px;
+    object-fit: cover;
+
+    &-xl {
+      width: 80px;
+      height: 80px;
+    }
+
+    &-sm {
+      width: 60px;
+      height: 60px;
+      border-radius: 20px;
+    }
+  }
+
+  &-title {
+    font-size: 19px;
+    font-weight: 600;
+
+    &-thin {
+      font-weight: 400;
+    }
+  }
+
+  &-subtitle {
+    margin-top: 5px;
+    color: $gray;
+
+    &-column {
+      @include flexbox(start);
+
+      h6 {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      i {
+        margin-top: 5px;
+        margin-left: 5px;
+        color: $orange;
+      }
+    }
+  }
+
+  &-column {
+    @include flexbox(between);
+    
+    &:last-child {
+      color: $gray;
+      @include column-flexbox(end);
+    }
+  }
+
+  &-time {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+}

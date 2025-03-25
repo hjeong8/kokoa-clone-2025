@@ -1,0 +1,16 @@
+.main-screen-channel {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid $gray-line;
+
+  &-header {
+    @include flexbox(between);
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: $gray;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
